@@ -1,0 +1,41 @@
+body {
+  background-image: url('https://cdn.discordapp.com/attachments/882626041280094268/1005736121738723430/lofi_city_gif.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+img {
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgb(57, 124, 201);
+  border-radius: 150px;
+}
+#av{
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+a{ 
+  border: 2px solid rgb(57, 124, 201);
+  width: 70%;
+  margin: 20px auto;
+  padding: 11px 10px;
+  display: block;
+  border-radius: 10px;
+}
+a:hover{
+  color: black;
+  border: 2px solid rgb(0, 0, 0);
+}
+#idk{
+  margin-top: 100px;
+}
+#mn{
+  margin-bottom: 30px;
+}
