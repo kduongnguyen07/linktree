@@ -1,41 +1,94 @@
-body {
-  background-image: url('https://cdn.discordapp.com/attachments/882626041280094268/1005736121738723430/lofi_city_gif.gif');
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  font-size: 20px;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
 }
 a{
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
 }
-img {
-  width: 150px;
-  height: 150px;
-  border: 2px solid rgb(57, 124, 201);
-  border-radius: 150px;
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background:url("https://cdn.discordapp.com/attachments/998125907967496203/1005742059895914526/lofi_city_gif.gif");
+    font-family: 'Nunito', sans-serif;
 }
-#av{
-  margin-top: 100px;
-  margin-bottom: 30px;
+.container{
+    width: 30em;
 }
-a{ 
-  border: 2px solid rgb(57, 124, 201);
-  width: 70%;
-  margin: 20px auto;
-  padding: 11px 10px;
-  display: block;
-  border-radius: 10px;
+.head__section img{
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
 }
-a:hover{
-  color: black;
-  border: 2px solid rgb(0, 0, 0);
+.head__section p{
+    text-align: center;
+    color: #fff;
 }
-#idk{
-  margin-top: 100px;
+.social__links ul li{
+    width: 100%;
+    margin: 1.2rem 0;
+    padding: 0.4rem 0.8rem;
+    background: rgba( 255, 255, 255, 0.1 );
+    backdrop-filter: blur( 0px );
+    border-radius: 5px;
+    transition: background 0.25s;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    box-shadow: 0 0 0.8rem  rgba(255, 255, 255, .12);
 }
-#mn{
-  margin-bottom: 30px;
+.js-tilt-glare{
+    border-radius: 5px;
+}
+.social__links ul li a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #ffff;
+    font-size: 1rem;
+}
+.social__links ul li a i{
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+    transform: scale(1.4) translateZ(50px);
+    transition: 0.25s;
+}
+.social__links ul li a span{
+    line-height: 1.4rem;
+}
+.social__links ul .instagram:hover{
+    background: #f149e3;
+}
+.social__links ul .youtube:hover{
+    background:#FF0000;
+}
+.social__links ul .facebook:hover{
+    background:#0088cc;
+}
+.social__links ul .github:hover{
+    background: #333;
+} 
+.social__links ul .discord:hover{
+  background: rgb(29, 105, 219);
+}
+.social__links ul .web:hover{
+  background: rgb(139, 55, 179);
+} 
+@media only screen and (max-width: 549px) {
+    .container{
+        width: 88vw;
+    }
+  }
+h1{
+  text-align: center;
+}
+h2{
+  text-align: center;
 }

@@ -5,34 +5,104 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
         <link type="text/css" rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
+        <head>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function () {
+    jQuery('body').bind('cut copy paste', function (e) {
+      e.preventDefault();
+    });
+    jQuery("body").on("contextmenu",function(e){
+      return false;
+    });
+  });
+  jQuery(document).keydown(function (event) {
+    if (event.keyCode == 123) {
+      return false;
+    }
+    if (event.ctrlKey && event.shiftKey && event.keyCode == 67) {
+      return false;
+    }
+    if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+      return false;
+    }
+  });
+  document.onkeydown = function(e) {
+    if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+      return false;
+    } else {
+      return true;
+    }
+  };
+  jQuery(document).keypress("u",function(e) {
+    if(e.ctrlKey) {
+      return false;
+    } else {
+      return true;
+    }
+  });
+  document.body.addEventListener('keydown', event => {
+    if (event.ctrlKey && 'spa'.indexOf(event.key) !== -1) {
+      event.preventDefault()
+    }
+  })
+</script>
+        </head>
     </head>
     <body>
-        <div id="av">
-            <img src="https://media.discordapp.net/attachments/855845963997642752/1002597461447147570/761E7E79-2A46-4D45-93B0-D4DC18C074FA.gif" />
-        </div>
-        
-        <div id="mn">
-            Dương Nguyên Khánh
-        </div>
-        <div class="mx">
-            <a href="https://www.facebook.com/kduongnguyen07" target="_blank">
-                Facebook
-            </a>
-            <a href="https://github.com/kduongnguyen07" target="_blank">
-                GitHub
-            </a>
-            <a href="https://www.youtube.com/channel/UC9Rn1W53ZoZx-wxy74Hflqw" target="_blank">
-                Youtube
-            </a>
-            <a href="https://www.instagram.com/elninodnk7829/" target="_blank">
-                Instagram
-            </a>
-            <a href="https://discord.com/users/748799374628356126" target="_blank">
-                LCS Dwong#2027
-            </a>
-        </div>
-        <div id="idk">
-            &copy; Copyright 2022 by Dương Nguyên Khánh.
-        </div>
+        <div class="container">
+            <div class="head__section">
+              <img src="https://media.discordapp.net/attachments/855845963997642752/1002597461447147570/761E7E79-2A46-4D45-93B0-D4DC18C074FA.gif" alt="">
+              <h1>Dương Nguyên Khánh</h1>
+              <h2>Tôi là một học sinh</h2>
+            </div>
+            <div class="social__links">
+              <ul id="item">
+                <li class="instagram"><a href="https://www.instagram.com/elninodnk7829/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <span>
+                      <h3>Instagram</h3>
+                      <p>Cái này làm ra cho có thôi nhé chứ chẳng có gì</p>
+                    </span>
+                  </a></li>
+                <li class="youtube"><a href="https://www.youtube.com/channel/UC9Rn1W53ZoZx-wxy74Hflqw" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                    <span>
+                      <h3>Youtube</h3>
+                      <p>Kênh Youtube xàm xí</p>
+                    </span>
+                  </a></li>
+                <li class="facebook"><a href="https://facebook.com/kduongnguyen07" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                    <span>
+                      <h3>Facebook</h3>
+                      <p>Đây là Facebook cá nhân của tôi</p>
+                    </span>
+                  </a></li>
+                <li class="github"><a href="https://github.com/kduongnguyen07" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>
+                      <h3>GitHub</h3>
+                      <p>Trang GitHub trống không</p>
+                    </span>
+                  </a></li>
+                  <li class="discord"><a href="https://discord.com/users/748799374628356126" target="_blank">
+                    <i class="fab fa-discord"></i>
+                    <span>
+                      <h3>Discord cá nhân</h3>
+                      <p>Nền tảng mà tôi hay dùng nhất</p>
+                    </span>
+                  </a></li>
+                  <li class="web"><a href="https://khanhdn.tk" target="_blank">
+                    <i class="fa-solid fa-browser"></i>
+                    <span>
+                      <h3>Web cá nhân</h3>
+                      <p>Đây là trang web của tôi</p>
+                    </span>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
     </body>
 </html>
