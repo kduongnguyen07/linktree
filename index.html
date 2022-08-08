@@ -55,26 +55,13 @@
         </head>
     <body>
       <!--Phần Preloaders-->
-      <div id="loader">
-        <img src="https://cdn.discordapp.com/attachments/745554137315278869/1006195620622647387/preloaer.gif"width="100%"/>
-   </div>
-   </body>
-   <script type="text/javascript">
-   var loader=document.getElementById("loader");
-   window.addEventListener("load",function(){
-        loader.style.height="100px";
-        loader.style.width="100px";
-        loader.style.borderRadius="0%";
-        loader.style.visibility="hidden";
-   });
-   </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <!--Jquery Preloaders-->
-      <script>$(window).on('load', function(event) {
-        $('body').removeClass('preloading');
-           // $('.load').delay(1000).fadeOut('fast');
-        $('.loader').delay(1000).fadeOut('slow');
-     });
-     </script>
       <!--Phần trang chính-->
         <div class="container">
             <div class="head__section">
