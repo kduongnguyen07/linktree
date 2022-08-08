@@ -1,3 +1,5 @@
+
+/*--------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 *{
     padding: 0;
@@ -97,3 +99,22 @@ h2{
       background-image: url('https://i.imgur.com/23ZX4CN.png');
     }
   }
+/*Preloader*/
+#loader{
+    height:100%;
+    width:100%;
+    background-color:#E7808B;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:
+    translate(-50%,-50%);
+   z-index:999;
+}
+#loader img{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:
+    translate(-50%,-50%);
+}
