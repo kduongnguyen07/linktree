@@ -10,8 +10,3 @@ VanillaTilt.init(document.querySelectorAll(".social__links ul li"), {
         "max-glare": 1
   });
 /*Preloader*/
-// Attempt 1
-$(document).ready(function () {
-    $(".loader").fadeOut("slow");
-  });
-  
