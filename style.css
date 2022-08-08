@@ -12,7 +12,7 @@ body{
     height: 100vh;
     display: grid;
     place-items: center;
-    background:url("https://i.imgur.com/23ZX4CN.png");
+    background:url("https://res.cloudinary.com/khanhdn-tk/image/upload/v1659947648/lofi_city_gif_xs3dur.gif");
     font-family: 'Nunito', sans-serif;
 }
 .container{
@@ -92,3 +92,8 @@ h1{
 h2{
   text-align: center;
 }
+@media (min-width: 768px) {
+    body {
+      background-image: url('https://i.imgur.com/23ZX4CN.png');
+    }
+  }
