@@ -97,6 +97,7 @@ h2{
 @media (min-width: 768px) {
     body {
       background-image: url('https://i.imgur.com/23ZX4CN.png');
+      background-size: cover;
     }
   }
 /*Preloader*/
