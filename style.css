@@ -14,7 +14,7 @@ body{
     height: 100vh;
     display: grid;
     place-items: center;
-    background:url("https://cdn.discordapp.com/attachments/998125907967496203/1006567808034938991/Blue_Minimalist_New_Day_Morning_Sunrise_Sunset_Phone_Wallpaper_1.png");
+    background:url("https://cdn.discordapp.com/attachments/998125907967496203/1006891463637999666/lofi_city_gif.gif");
     font-family: 'Nunito', sans-serif;
 }
 .container{
@@ -96,7 +96,7 @@ h2{
 }
 @media (min-width: 768px) {
     body {
-      background-image: url('https://cdn.discordapp.com/attachments/998125907967496203/1006891463637999666/lofi_city_gif.gif');
+      background-image: url('https://i.imgur.com/23ZX4CN.png');
       background-size: cover;
     }
   }
