@@ -14,8 +14,8 @@ body{
     height: 100vh;
     display: grid;
     place-items: center;
-    background:url("https://cdn.discordapp.com/attachments/998125907967496203/1006891463637999666/lofi_city_gif.gif");
-    background-size: contain;
+    background:url("https://cdn.discordapp.com/attachments/745554137315278869/1006894826253463622/3a7bda163b42122cec8497e44ce3f9dd.gif");
+    background-size: cover;
     font-family: 'Nunito', sans-serif;
 }
 .container{
